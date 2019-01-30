@@ -2,7 +2,7 @@
  * encoding: utf-8
  * @author: siru
  * @create on: 2019-01-30 19:49:09
- * @update on: 2019-01-30 22:24:05
+ * @update on: 2019-01-30 22:30:55
  */
 #include <iostream>
 #include <cassert>
@@ -19,8 +19,8 @@ public:
 
         int l = 0, r = s.size() - 1;
 
-        l = nextAlphaNumeric(s, l + 1);
-        r = previousAlphaNumeric(s, r - 1);
+        l = nextAlphaNumeric(s, l);
+        r = previousAlphaNumeric(s, r);
 
         while (l <= r) {
             if (tolower(s[l]) != tolower(s[r]))
@@ -60,16 +60,18 @@ private:
 
 int main(int argc, char const *argv[]) {
     
-    string str1("A man, a plan, a canal: Panama");
-    string str2("race a car");
+    // string str1("A man, a plan, a canal: Panama");
+    // string str2("race a car");
+    string str3("ab");
 
     Solution solution = Solution();
-    bool res1 = solution.isPalindrome(str1);
-    bool res2 = solution.isPalindrome(str2);
+    // bool res1 = solution.isPalindrome(str1);
+    // bool res2 = solution.isPalindrome(str2);
+    bool res3 = solution.isPalindrome(str3);
 
-    cout << (res1 ? "True" : "False") << endl;
-    cout << (res2 ? "True" : "False") << endl;
-
+    // cout << (res1 ? "True" : "False") << endl;
+    // cout << (res2 ? "True" : "False") << endl;
+    cout << (res3 ? "True" : "False") << endl;
 
     return 0;
 }
