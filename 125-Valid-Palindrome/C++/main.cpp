@@ -2,7 +2,7 @@
  * encoding: utf-8
  * @author: siru
  * @create on: 2019-01-30 19:49:09
- * @update on: 2019-01-30 22:30:55
+ * @update on: 2019-01-30 22:35:32
  */
 #include <iostream>
 #include <cassert>
@@ -75,4 +75,3 @@ int main(int argc, char const *argv[]) {
 
     return 0;
 }
-
